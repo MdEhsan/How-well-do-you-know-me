@@ -8,10 +8,13 @@ var userName = readLineSync.question("Hi! What's your name? ")
 
 console.log("Welcome! " + userName + " Do you know Md Ehsan? ")
 
-var highScore = {
+var highScore = [{
     name: "irfan",
     score: 4
-}
+}, {
+    name: "Ashish",
+    score: 3
+}]
 
 
 function play(question, answer) {
@@ -49,6 +52,9 @@ for (var i = 0; i < questions.length; i++) {
 }
 
 
-console.log("YAY! Your final score is " + score)
-
-console.log("High scored till now " + highScore)
+function showScores(){
+    console.log('YAY! Your final score is: ' + score)
+    console.log("check out the highest score, If your socre is more than current achievers. Tell me to update it.")
+    highScores.map(score => console.log(score.name, " : ", score.score))
+}
+showScores()
