@@ -44,7 +44,11 @@ var questions = [{
 }, {
     question: "which is my favourite web series? ",
     answer: "moneyheist"
-}]
+} , {
+    question : "which is my favourite food?",
+    answer : "biryani"
+}
+]
 
 for (var i = 0; i < questions.length; i++) {
     var currentQuestion = questions[i]
